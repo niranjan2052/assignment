@@ -96,11 +96,16 @@ ul {
 
 .main-container {
     /* padding-top: 12.5vh; */
-    min-height: 100vh;
+    min-height: 80vh;
 }
 
 .category {
     margin-top: 20px;
+    text-align: justify;
+}
+
+.font-weight-bold {
+    font-weight: bold;
 }
 
 /* -----Slider----- */
@@ -159,12 +164,14 @@ ul {
     background-color: #fff;
 }
 
+/* about */
+
 .abt-bg-image{
     background-image: url(../images/abt-bg-img.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     margin:auto;
-    height: 80vh;
+    height: 70vh;
     width: 100%;
 }
 .abt-article {
@@ -173,4 +180,15 @@ ul {
 }
 .social-links a{
     margin-left: 10px;
+}
+
+/* Product */
+
+.product-list {
+    margin-top: 20px;
+    color: rgb(34, 54, 69);
+}
+
+.product-list button {
+    color: #e74c3c;
 }
