@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@1,300&display=swap');
+:root{
+    --redtheme: #e74c3c;
+  }
+
 
 html,
 body {
@@ -12,7 +16,8 @@ body {
     top: 0;
     left: 0;
 }::selection{
-    background-color: #e74c3c;
+    background-color: var(--redtheme);
+    color: #fff;
 }
 
 a {
@@ -22,7 +27,7 @@ a {
 }
 
 a:hover {
-    color: #e74c3c;
+    color: var(--redtheme);
 }
 
 ul {
@@ -48,11 +53,11 @@ ul {
 .navbar-light .navbar-brand {
     font-family: 'Pacifico', cursive;
     font-size: 2.5rem;
-    color: #e74c3c;
+    color: var(--redtheme);
 }
 
 .navbar-toggler {
-    background: #e74c3c;
+    background: var(--redtheme);
     border: none;
     padding: 10px 6px;
     outline: none;
@@ -65,12 +70,12 @@ ul {
 }
 
 .navbar-expand-lg .navbar-nav .nav-link:hover {
-    border-top: 4px solid #e74c3c;
+    border-top: 4px solid var(--redtheme);
 }
 
 .navbar-expand-lg .navbar-nav .nav-link.active {
-    border-top: 4px solid #e74c3c;
-    color: #e74c3c;
+    border-top: 4px solid var(--redtheme);
+    color: var(--redtheme);
 }
 
 .navbar-nav button {
@@ -78,7 +83,7 @@ ul {
 }
 
 .navbar-nav .btn {
-    background-color: #e74c3c;
+    background-color: var(--redtheme);
     color: #fff;
     border-radius: 0;
     padding: 1rem 1.5rem;
@@ -94,12 +99,9 @@ ul {
 #footer {
     bottom: 0;
     width: 100%;
+    margin-top: 5rem;
 }
 
-.main-container {
-    /* padding-top: 12.5vh; */
-    min-height: 80vh;
-}
 
 .category {
     margin-top: 20px;
@@ -153,7 +155,7 @@ ul {
 }
 
 .slider-btn btn {
-    background-color: #e74c3c;
+    background-color: var(--redtheme);
     color: #fff;
     border-radius: 0;
     padding: 1.5rem 2rem;
@@ -192,7 +194,7 @@ ul {
 }
 
 .product-list button {
-    color: #e74c3c;
+    color: var(--redtheme);
 }
 
 #accordion>.card {
@@ -251,7 +253,7 @@ ul {
 }
 
 .btn-primary {
-    background-color: #e74c3c;
+    background-color: var(--redtheme);
 }
 
 #pills-tab .nav-link {
@@ -260,5 +262,42 @@ ul {
 
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
     color: #fff;
-    background-color: #e74c3c;
+    background-color: var(--redtheme);
+}
+
+/* Product detials */
+.thalimg {
+    width: 100%;
+}
+
+/* index */
+.index-bg {
+    background-image: url(../images/index-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 60vh;
+}
+
+.overlay-index {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 100%;
+    height: 100%;
+    background:rgba(0, 0, 0, 0.7);
+    z-index: 10;
+}
+
+.index-details {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: justify;
+    margin: 5rem;
+    font-family: cursive;
+}
+
+.index-details p{
+    font-weight: normal;
 }
